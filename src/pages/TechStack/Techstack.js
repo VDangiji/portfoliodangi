@@ -1,7 +1,8 @@
 import React from "react";
 import "./Techstack.css";
 // import RubberBand from "react-reveal/RubberBand";
-import Bounce from "react-reveal/Bounce";
+// import Bounce from "react-reveal/Bounce";
+import { Bounce } from 'react-awesome-reveal';
 import { Fade } from 'react-awesome-reveal';
 import { TechstackList } from "../../utils/TechstackList";
 

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Projects.css";
-import Rotate from "react-reveal/Rotate";
+// import Rotate from "react-reveal/Rotate";
+import { Rotate } from 'react-awesome-reveal';
 // import Spin from "react-reveal/Spin";
 // import LightSpeed from "react-reveal/LightSpeed";
 
