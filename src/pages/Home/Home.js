@@ -5,7 +5,7 @@ import Resume from "../../assets/docs/Resume.pdf";
 import "./Home.css";
 import { BsMoonStarsFill } from "react-icons/bs";
 import { BsFillSunFill } from "react-icons/bs";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 const Home = () => {
   const [theme, setTheme] = useTheme();
   // handel theme lightchange

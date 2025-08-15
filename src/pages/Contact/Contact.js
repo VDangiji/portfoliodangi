@@ -5,10 +5,11 @@ import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
-import Rotate from 'react-reveal/Rotate';
-import LightSpeed from 'react-reveal/LightSpeed';
+import { Rotate } from "react-awesome-reveal";
+import { LightSpeed } from "react-awesome-reveal";
 import { toast } from 'react-toastify';
 import  axios  from 'axios';
+
 
  
 const Contact = () => {

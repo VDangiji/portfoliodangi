@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 // import ReactDom from 'react-dom/protofolio/src/index.js';
 import './index.css';
+import "animate.css";
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from "./context/ThemeContext";
