@@ -8,8 +8,7 @@ import { FcVideoProjector } from "react-icons/fc";
 // import { FcVoicePresentation } from "react-icons/fc";
 import { FcBusinessContact } from "react-icons/fc";
 import { Link } from "react-scroll";
-import Zoom from "react-reveal/Zoom";
-import Fade from "react-reveal/Fade";
+import { Fade, Zoom } from "react-awesome-reveal";
 const Menus = ({ toggle }) => {
   return (
     <>
