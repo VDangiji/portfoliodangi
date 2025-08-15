@@ -1,12 +1,12 @@
 import React from "react";
 import "./About.css";
-import { Jump } from "react-awesome-reveal";
+import { AttentionSeeker } from "react-awesome-reveal";
 //  import Jump from "react-reveal/Jump"; 
 
 const about = () => {
   return (
     <>
-    <Jump>
+ <AttentionSeeker effect="tada">
       <div className="about" id="about">
         <div className="row">
           <div className="col-md-6 col-xl-6 col-lg-6 col-xs-12 about-img" >
@@ -35,7 +35,7 @@ const about = () => {
           </div>
         </div>
       </div>
-      </Jump>
+      </AttentionSeeker>
     </>
   );
 };

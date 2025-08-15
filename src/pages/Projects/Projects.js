@@ -1,7 +1,8 @@
 import React from "react";
 import "./Projects.css";
-
-import { Spin } from "react-awesome-reveal";
+import Rotate from "react-reveal/Rotate";
+// import Spin from "react-reveal/Spin";
+// import LightSpeed from "react-reveal/LightSpeed";
 
 const Projects = () => {
   return (
@@ -17,7 +18,7 @@ const Projects = () => {
         </p>
         {/* card design */}
         <div className="row" id="ads">
-          <Spin>
+          <Rotate>
             {/* project 1 */}
             <div className="col-md-4">
               <div className="card rounded">
@@ -119,7 +120,7 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-          </Spin>
+          </Rotate>
         </div>
       </div>
     </> 

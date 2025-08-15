@@ -5,8 +5,9 @@ import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
-import { Rotate } from "react-awesome-reveal";
-import { LightSpeed } from "react-awesome-reveal";
+import Rotate from "react-reveal/Rotate";
+import Slide from "react-reveal/Slide";
+// import LightSpeed from "react-reveal/LightSpeed";
 import { toast } from 'react-toastify';
 import  axios  from 'axios';
 
@@ -19,7 +20,6 @@ const Contact = () => {
   const [msg, setmsg] = useState("")
 
   //  handle submit button message
-
   const handleSubmit = async(e) =>{
     e.preventDefault();
     try {
@@ -27,7 +27,7 @@ const Contact = () => {
         toast.error("Please Provide all fields");
        
       }
-       const res = await  axios.post('/api/v1/portfolio//sendEmail',{name,email,msg})
+       const res = await  axios.post('/api/v1/portfolio/sendEmail',{name,email,msg})
       //  validation success
       if (res.data.success) {
         toast.success(res.data.message)
@@ -51,13 +51,13 @@ const Contact = () => {
             <div className="col-md-6 col-lg-6 col-xl-6 col-sm-12 " id="contact">
               <div className="card1">
                 <div className="row border-line">
-                <LightSpeed>
+                <Slide>
                   <img
                     src="/assets/image.png"
                     alt="contact"
                     className="image"
                   />
-                  </LightSpeed>
+                  </Slide>
                 </div>
               </div>
             </div>
