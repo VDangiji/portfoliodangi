@@ -1,4 +1,4 @@
-.techstack {
+/* .techstack {
   padding-left: 130px;
   margin-top: 60px;
 }
@@ -30,10 +30,10 @@
   color: white;
 
   transition: 1s;
-}
+} */
 
 /* =============================== */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .techstack {
     padding: 0;
     margin: 0;
@@ -42,5 +42,112 @@
 
   .techstack hr {
     width: 280px;
+  }
+} */
+
+
+
+
+
+
+/* ========================================================================== */
+.techstack {
+  margin: 60px auto;
+  padding: 0 20px;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.techstack hr {
+  color: #138781;
+  width: 300px;
+  margin: 10px auto 30px auto;
+  border: 1px solid #138781;
+}
+
+.section-title {
+  font-weight: bold;
+  color: #138781;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.techstack-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tech-card {
+  flex: 1 1 calc(20% - 20px); /* 5 columns on desktop */
+  max-width: calc(20% - 20px);
+  min-width: 120px;
+  background: #f8f8f8;
+  padding: 20px 10px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tech-card:hover {
+  background-color: #138781;
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tech-icon-wrapper {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #138781;
+}
+
+.tech-card:hover .tech-icon-wrapper {
+  color: white;
+}
+
+.tech-name {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* =========== RESPONSIVE =========== */
+
+@media (max-width: 992px) {
+  .tech-card {
+    flex: 1 1 calc(25% - 20px); /* 4 columns on tablets */
+    max-width: calc(25% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-card {
+    flex: 1 1 calc(33.33% - 20px); /* 3 columns */
+    max-width: calc(33.33% - 20px);
+  }
+
+  .techstack hr {
+    width: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tech-card {
+    flex: 1 1 calc(50% - 20px); /* 2 columns on small phones */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 400px) {
+  .tech-card {
+    flex: 1 1 100%; /* 1 column on extra small devices */
+    max-width: 100%;
   }
 }

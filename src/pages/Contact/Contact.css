@@ -99,3 +99,197 @@ textarea:focus {
         justify-content: center;
     }
 }
+
+
+
+/* ========================================================================= */
+
+/* Container styling */
+.contact {
+  width: 80rem;
+  max-width: 100%; /* Responsive max width */
+  margin: 60px auto 60px 220px; /* Center horizontally with left margin */
+  padding-top: 50px;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+/* Main card flex container for image + form */
+.card0 {
+  display: flex; /* Flex layout */
+  flex-wrap: wrap; /* Wrap on smaller screens */
+  box-shadow: 0px 4px 8px 0px #757575;
+  border-radius: 0;
+  background: #fff; /* White background */
+}
+
+/* Image container */
+.card1 {
+  flex: 1 1 50%; /* Half width, flexible */
+  border-right: 1px solid #e0e0e0; /* Divider line */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Remove border and full width on smaller devices */
+@media (max-width: 991px) {
+  .card1 {
+    flex: 1 1 100%; /* Full width */
+    border-right: none;
+    padding: 10px 0 20px;
+  }
+}
+
+/* Responsive image */
+.card1 .image {
+  max-width: 400px; /* Max width for image */
+  width: 100%; /* Responsive */
+  height: auto;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Form container */
+.card2 {
+  flex: 1 1 50%; /* Half width */
+  padding: 40px 50px;
+  box-sizing: border-box;
+}
+
+/* Full width and less padding on smaller screens */
+@media (max-width: 991px) {
+  .card2 {
+    flex: 1 1 100%;
+    padding: 20px 15px;
+  }
+}
+
+/* Social icons container */
+.social-heading {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* Space between icons */
+  color: #138781;
+}
+
+/* Social icon links with hover scale */
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.icon-link:hover {
+  transform: scale(1.2);
+}
+
+/* Separator with lines and OR text */
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  gap: 10px;
+}
+
+.line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #e0e0e0;
+}
+
+.or {
+  font-weight: bold;
+  color: #138781;
+  font-size: 1rem;
+}
+
+/* Inputs and textarea styling */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #138781;
+  box-sizing: border-box;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #138781;
+  box-shadow: 0 0 5px #138781;
+}
+
+/* Submit button styling */
+.button {
+  background-color: #1e1e2c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 0;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #000;
+}
+
+/* Responsive tweaks for smaller devices */
+@media (max-width: 600px) {
+  .contact {
+    margin: 50px 15px 60px; /* Margin adjusted for small screens */
+    padding-top: 20px;
+    margin-left: 0; /* Removed left margin */
+  }
+
+  .card1 {
+    padding: 10px 0 15px;
+  }
+
+  .card1 .image {
+    max-width: 100%; /* Full width on mobile */
+  }
+
+  .card2 {
+    padding: 15px;
+  }
+
+  .social-heading {
+    font-size: 1rem;
+    gap: 10px;
+  }
+
+  .separator {
+    margin-bottom: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    padding: 10px 0;
+  }
+}
