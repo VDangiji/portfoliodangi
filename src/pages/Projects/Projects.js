@@ -1,9 +1,7 @@
+
 import React from "react";
 import "./Projects.css";
-// import Rotate from "reapct-reveal/Rotate";
 import { Rotate } from 'react-awesome-reveal';
-// import Spin from "react-reveal/Spin";
-// import LightSpeed from "react-reveal/LightSpeed";
 
 const Projects = () => {
   return (
@@ -17,11 +15,11 @@ const Projects = () => {
           Here are some of my recent projects that I have worked on. You can
           find more details about each project by clicking on the links below.
         </p>
-        {/* card design */}
+
         <div className="row" id="ads">
-          <Rotate>
-            {/* project 1 */}
-            <div className="col-md-4">
+          {/* project 1 */}
+          <div className="col-md-4">
+            <Rotate>
               <div className="card rounded">
                 <div className="card-image">
                   <span className="card-notify-badge">Frontend</span>
@@ -32,22 +30,26 @@ const Projects = () => {
                   <span className="card-detail-badge">CSS</span>
                   <span className="card-detail-badge">JavaScript</span>
                 </div>
-                <div className="card-body text-center ">
-                  <div className="ad-title m-auto ">
+                <div className="card-body text-center">
+                  <div className="ad-title m-auto">
                     <h6 className="text-uppercase">Car Rental Website</h6>
                   </div>
                   <a
                     href="https://car-rental-iota-nine.vercel.app/"
                     className="ad-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     View Project
                   </a>
                 </div>
               </div>
-            </div>
+            </Rotate>
+          </div>
 
-            {/* project 2 */}
-            <div className="col-md-4">
+          {/* project 2 */}
+          <div className="col-md-4">
+            <Rotate>
               <div className="card rounded">
                 <div className="card-image">
                   <span className="card-notify-badge">Frontend</span>
@@ -58,21 +60,26 @@ const Projects = () => {
                   <span className="card-detail-badge">Three.js</span>
                   <span className="card-detail-badge">Tailwind CSS</span>
                 </div>
-                <div className="card-body text-center ">
-                  <div className="ad-title m-auto ">
+                <div className="card-body text-center">
+                  <div className="ad-title m-auto">
                     <h6 className="text-uppercase">Apple 3D iPhone Showcase</h6>
                   </div>
                   <a
                     href="https://3-d-iphone-showcase.vercel.app/"
                     className="ad-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     View Project
                   </a>
                 </div>
               </div>
-            </div>
-            {/* project 3 */}
-            <div className="col-md-4">
+            </Rotate>
+          </div>
+
+          {/* project 3 */}
+          <div className="col-md-4">
+            <Rotate>
               <div className="card rounded">
                 <div className="card-image">
                   <span className="card-notify-badge">Frontend</span>
@@ -81,23 +88,27 @@ const Projects = () => {
                 <div className="card-image-overlay m-auto mt-3">
                   <span className="card-detail-badge">React</span>
                   <span className="card-detail-badge">Tailwind CSS</span>
-                  {/* <span className="card-detail-badge">JavaScript</span> */}
                 </div>
-                <div className="card-body text-center ">
-                  <div className="ad-title m-auto ">
+                <div className="card-body text-center">
+                  <div className="ad-title m-auto">
                     <h6 className="text-uppercase">Electra Shop</h6>
                   </div>
                   <a
                     href="https://electra-shop-six.vercel.app/"
                     className="ad-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     View Project
                   </a>
                 </div>
               </div>
-            </div>
-            {/* project 4 */}
-            <div className="col-md-4">
+            </Rotate>
+          </div>
+
+          {/* project 4 */}
+          <div className="col-md-4">
+            <Rotate>
               <div className="card rounded">
                 <div className="card-image">
                   <span className="card-notify-badge">Frontend</span>
@@ -108,23 +119,25 @@ const Projects = () => {
                   <span className="card-detail-badge">Tailwind CSS</span>
                   <span className="card-detail-badge">JavaScript</span>
                 </div>
-                <div className="card-body text-center ">
-                  <div className="ad-title m-auto ">
+                <div className="card-body text-center">
+                  <div className="ad-title m-auto">
                     <h6 className="text-uppercase">To Desktop Website</h6>
                   </div>
                   <a
                     href="https://to-desk-top-ashy.vercel.app/"
                     className="ad-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     View Project
                   </a>
                 </div>
               </div>
-            </div>
-          </Rotate>
+            </Rotate>
+          </div>
         </div>
       </div>
-    </> 
+    </>
   );
 };
 

@@ -25,9 +25,9 @@ function App() {
         <Techstack />
         <Projects />
         <Contact />
-        <div className="footer pb-3 ms-3">
+        <div className="footer pt-3 pb-3 ms-3 mt-md-3 mt-1">
         <JackInTheBox>
-          <h4 className="text-center">
+          <h4 className="text-center ">
             © 2025 Code by VDangi❤️ . All rights reserved.
           </h4>
           </JackInTheBox>

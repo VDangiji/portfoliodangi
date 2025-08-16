@@ -1,49 +1,37 @@
+
 import React from "react";
 import "./Techstack.css";
-// import RubberBand from "react-reveal/RubberBand";
-// import Bounce from "react-reveal/Bounce";
-import { Bounce } from 'react-awesome-reveal';
-import { Fade } from 'react-awesome-reveal';
+import { Bounce, Fade } from "react-awesome-reveal";
 import { TechstackList } from "../../utils/TechstackList";
 
 const Techstack = () => {
   return (
-    <>
-      <div className="container techstack" id="techstack">
-        <Bounce>
-          <h2 className="col-12 mt-3 mb-1 text-center text-uppercase">
-            Technologies Stack
-          </h2>
-          <hr />
-          <p className="pb-3 text-center">
-            👉 including programming Languages, frameworks, databses, front-end
-            and back-end tools, and APIs
-          </p>
-        </Bounce>
-        <div className="row">
-          {TechstackList.map((tech) => (
-            <Fade left key={tech._id}>
-              <div className="col-md-3">
-                <div className="card m-2">
-                  <div className="card-content">
-                    <div className="card-body">
-                      <div className="media d-flex justify-content-center">
-                        <div className="alig-self-center">
-                          <tech.icon className="tech-icon" />
-                        </div>
-                        <div className="media-body">
-                          <h5>{tech.name}</h5>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Fade>
-          ))}
-        </div>
+    <div className="container techstack" id="techstack">
+      <Bounce>
+      <div className="techstack-header">
+ <h2 className="section-title">Technologies Stack</h2>
+        <hr />
+        <p className="section-subtitle">
+          👉 including programming Languages, frameworks, databases, front-end
+          and back-end tools, and APIs
+        </p>
       </div>
-    </>
+       
+      </Bounce>
+
+      <div className="techstack-grid">
+        {TechstackList.map((tech) => (
+          <Fade key={tech._id} direction="left">
+            <div className="tech-card">
+              <div className="tech-icon-wrapper">
+                <tech.icon />
+              </div>
+              <div className="tech-name">{tech.name}</div>
+            </div>
+          </Fade>
+        ))}
+      </div>
+    </div>
   );
 };
 
